@@ -1,0 +1,19 @@
+#Implementación de los querys y las mutaciones.
+type Query{
+    #fetch all object.
+    pedidos:[Pedidos]
+
+    # fetch an object given its ID.
+    #
+    # Argument
+    # id: ID of the object.
+    pedidosGet(id:Int):Pedidos
+}
+
+type Mutation{
+    # Adds a comment to an Issue or Pull Request.
+    #
+    # Arguments
+    # input: [id, status, nombreCliente, direccionEntrega, estimacionEntrega]
+    pedidosSave(id:Int, status:String, nombreCliente:String, direccionEntrega:String, estimacionEntrega: Date):Pedidos
+}

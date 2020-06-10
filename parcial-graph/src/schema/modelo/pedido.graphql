@@ -1,0 +1,8 @@
+#Información de los pedidos
+type Pedidos {
+    id: Int
+    status: String
+    nombreCliente: String
+    direccionEntrega: String
+    estimacionEntrega: Date
+}
